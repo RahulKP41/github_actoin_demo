@@ -1,11 +1,11 @@
 name: Output Demo
 on: push
 jobs:
-  jobs1:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Step one
         id: step1
-        run: echo "version = 0.0.1" >> $GITHUB_OUTPUT #this is an file to store in github
+        run: echo "version=0.0.1" >> $GITHUB_OUTPUT #this is an file to store in github
       - name: Step two
         run: echo "This version is ${{ steps.step1.outputs.version }}"
