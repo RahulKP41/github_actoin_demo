@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Run if branch step
         #if: github.ref == 'refs/heads/main'
-        if: github.ref == 'main'        
+        if: github.ref_name == 'main'        
         run: echo "Runnig this step"
       - name: Run this step
         run: echo "Runnig this step"
