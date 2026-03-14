@@ -5,6 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Use context variables
-        run:
+        run: |
           echo "This workflow ia trigger by ${{ github.actor }}"
           echo "The repository name is ${{ github.repository }}"
+      - name: print all variables under github
+        run: "${{ toJson(github)}}"
+      
