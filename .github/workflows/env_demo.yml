@@ -1,0 +1,12 @@
+name: Environment Demo
+on: push
+env:
+  APP_ENV: "test"
+jobs:
+  env_demo:
+    env:
+      APP_ENV: "test"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Connecting to the repo
+        uses: echo "App is connected to the $APP_ENV"S
