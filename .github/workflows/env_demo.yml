@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Connecting to the repo
-        uses: echo "App is connected to the $APP_ENV"S
+        uses: echo "App is connected to the $APP_ENV"
